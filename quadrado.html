@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos</title>
+</head>
+
+
+<body calss="contateNos">
+
+    <div class="title">
+        <h1>Contate Nos</h1>
+    </div>
+
+    <main>
+        <div class="userDads">
+            <div>
+                <div class="dads">
+                    <p>Endereço</p>
+                    <input type="text" placeholder="Informe seu endereço">
+                </div>
+                <br>
+            </div>
+
+            <div>
+                <div class="dads">
+                    <p>Nome</p>
+                    <input type="text" placeholder="Informe seu Nome">
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="userDads">
+            <div>
+                <div class="dads">
+                    <p>Telefone</p>
+                    <input type="number" placeholder="Informe seu Telefone">
+                </div>
+                <br>
+            </div>
+
+            <div>
+                <div class="dads">
+                    <p> Data</p>
+                    <input type="date" placeholder="Informe sua data de Nascimento">
+                </div>
+                <br>
+            </div>
+
+        </div>
+
+        <div class="divMessage">
+            <div>
+                <p>Mensagem</p>
+                <textarea name="" class="menssagem"></textarea>
+            </div>
+            <br>
+            <button>Enviar</button>
+        </div>
+    </main>
+
+
+
+</body>
+
+
+</html>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-color: sienna;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title h1 {
+        margin-top: 20px;
+        font-size: 75px;
+    }
+
+    .divMessage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .divMessage div {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .contateNos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .userDads {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+    .userDads div {
+        margin: 10px;
+        margin-top: 5px;
+    }
+
+    main {
+        border-radius: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(139, 67, 34);
+        height: 500px;
+
+    }
+
+    button {
+        transition: 0.9s;
+        padding: 30px;
+        width: 100%;
+        border-radius: 1cap;
+        background-color: rgb(43, 255, 0);
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        transition: 0.6s;
+        background-color: rgb(25, 138, 3);
+
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 20%;
+        border-color: rgb(97, 11, 11);
+        cursor: text;
+        background-color: gray;
+
+    }
+
+    ::placeholder {
+        color: rgb(0, 0, 0);
+    }
+
+    .dads {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .menssagem {
+        border-radius: 10px;
+        width: 95%;
+        height: 100px;
+
+    }
+</style>
